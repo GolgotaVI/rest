@@ -1,0 +1,276 @@
+main {
+  display: grid;
+}
+main .container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+main .container .fondo {
+  width: 100%;
+}
+main .container .fondo img {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .container .principal {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+main .container .principal h1 {
+  padding-top: 35%;
+}
+main .container .principal h3 {
+  padding: 20px 0;
+  text-decoration: overline;
+  padding: 20px 0;
+}
+main .container .principal button {
+  padding: 15px 30px;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .container .principal button:hover {
+  background-color: orangered;
+}
+main .imagen1 {
+  display: none;
+}
+main section > h2 {
+  padding: 50px 0;
+  text-decoration: overline;
+  text-align: center;
+}
+main .containerB {
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .containerB .cartas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .containerB .cartas img {
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
+}
+main .containerB .cartas img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+main .containerB .cartas img:hover ~ .mi {
+  display: block;
+}
+main .containerB .ver, main .containerB .ver2 {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.631);
+}
+main .containerB .ver img, main .containerB .ver2 img {
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+}
+main .containerB #imagen1:checked ~ .ver, main .containerB #imagen2:checked ~ .ver2 {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  top: 90%;
+  text-align: center;
+}
+main .containerB #imagen1:checked ~ .ver img, main .containerB #imagen2:checked ~ .ver2 img {
+  position: relative;
+  top: 10%;
+  width: 90%;
+  height: 80vh;
+}
+main .containerB #imagen1:checked ~ .ver .equi, main .containerB #imagen1:checked ~ .ver .equi2, main .containerB #imagen2:checked ~ .ver2 .equi, main .containerB #imagen2:checked ~ .ver2 .equi2 {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+main .containerC {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  background-color: #ffeacf;
+}
+main .containerC .cartaLista {
+  width: 90%;
+  text-align: center;
+}
+main .containerC .cartaLista a {
+  padding: 15px 30px;
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid orange;
+  border-radius: 10px;
+  color: orange;
+  margin: 0 10px;
+}
+main .containerC .cartaLista a:hover {
+  background-color: orangered;
+  color: white;
+}
+main .containerC .precios {
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  padding: 50px 0;
+}
+main .containerC .precios ul li {
+  padding: 15px 20px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+main .containerC .precios ul li img {
+  width: 100%;
+  height: 300px;
+}
+main .containerC .precios ul li span {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+}
+main .containerD .reserva {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+main .containerD .reserva .horarios {
+  margin: auto;
+  width: 90%;
+}
+main .containerD .reserva .horarios h3 {
+  margin: 15px 0;
+}
+main .containerD .reserva .horarios p {
+  width: 90%;
+}
+main .containerD .reserva .form {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+  padding: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0;
+}
+main .containerD .reserva .form form {
+  display: flex;
+  flex-direction: column;
+}
+main .containerD .reserva .form form label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+main .containerD .reserva .form form input {
+  padding: 10px 10px;
+  border: 1px solid gray;
+}
+main .containerD .reserva .form form button {
+  margin-top: 25px;
+  padding: 10px 0;
+  background-color: orange;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+main .containerD .reserva .form form button:hover {
+  background-color: orangered;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .container div h1, .container div h3, .container div button {
+    position: relative;
+    top: 90px;
+  }
+
+  .containerB .cartas {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .container div h1, .container div h3, .container div button {
+    position: relative;
+    top: 150px;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 400px;
+  }
+  .container .principal {
+    padding-bottom: 250px;
+  }
+  .container .principal h1, .container .principal h3, .container .principal button {
+    position: relative;
+    top: 90px;
+  }
+
+  .containerB {
+    width: 100%;
+  }
+  .containerB h2 {
+    font-size: 18px;
+  }
+  .containerB .cartas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerC {
+    width: 100%;
+    position: relative;
+    top: 30%;
+  }
+  .containerC .cartaLista {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  .containerC a {
+    margin: 50px 0;
+  }
+
+  .containerD {
+    margin-top: 550px;
+  }
+  .containerD .reserva {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerD p {
+    font-size: 11px;
+  }
+  .containerD .horarios {
+    margin-bottom: 200px;
+  }
+}

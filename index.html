@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twing</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+
+            <div class="nav__logo">
+                <img src="./images/logos-de-comidas.jpg" alt="">
+            </div>
+            <div class="nav__list">
+                <ul>
+                    <li><a href="#sec1" style="text-decoration: underline;">PAGINA DE INICIO</a></li>
+                    <li><a href="#sec2">DESAYUNOS Y MERIENDAS</a></li>
+                    <li class="show"> <a href="#">MAS<span><img src="./images/icons/lupa.svg" alt=""></span></a>
+                        <ul class="list--hide">
+                            <li><a href="#sec3">NUESTRA CARTA</a></li>
+                            <li><a href="#">RESERVA UNA MESA</a></li>
+                            <li><a href="#">SOBRE NOSOTROS</a></li>
+                            <li><a href="#">CONTACTO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__contactos">
+                <a href="#"><img src="./images/icons/mundo.svg" alt=""></a>
+                <a href="#"></a><img src="/images/icons/avion-papel.svg" alt=""></a>
+                <a href="#"></a><img src="./images/icons/telefono.svg" alt=""></a>
+            </div>
+        </nav>
+
+        <label for="check" class="so"><img src="./images/icons/menu.svg" alt=""></label>
+        <input type="checkbox" name="" id="check" class="box">
+
+        <div class="menu--hide">
+
+            <div class="cerrar-check"><label for="check"><img src="./images/icons/close.svg" alt=""></label>
+            </div>
+
+            <ul>
+                <li><a href="#sec1">PAGINA INICIO</a></li>
+                <li><a href="#sec2">DESAYUNOS Y MERIENDAS</a></li>
+                <li><a href="#sec3">NUESTRA CARTA</a></li>
+                <li><a href="#">RESERVA UNA MESA</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+
+                <div class="nav__contactos--hide">
+                    <a href="#"><img src="./images/icons/mundo.svg" alt=""></a>
+                    <a href="#"></a><img src="/images/icons/avion-papel.svg" alt=""></a>
+                    <a href="#"></a><img src="./images/icons/telefono.svg" alt=""></a>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="sec1" class="container">
+            <div class="principal">
+                <h1>TWING</h1>
+                <h3>COCINA CASERA</h3>
+                <button> RESERVA UNA MESA </button>
+            </div>
+            <div class="fondo">
+                <img src="./images/comida-platos.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="sec2" class="containerB">
+            <h2>DESAYUNOS Y MERIENDAS</h2>
+            <div class="cartas">
+                <label for="imagen1">
+                    <div>
+                        <img src="./images/carta-menu.webp" alt="">
+                        <!-- <div class="mi"></div> -->
+                    </div>
+                </label>
+
+                <label for="imagen2">
+                    <div>
+                        <img src="./images/carta-menu1.webp" alt="">
+                    </div>
+                </label>
+
+                <!-- <a href="#"><img src="./images/carta-menu1.webp" alt=""></a> -->
+            </div>
+
+            <input type="checkbox" name="" id="imagen1" class="imagen1">
+            <input type="checkbox" name="" id="imagen2" class="imagen1">
+
+            <div class="ver">
+                <label for="imagen1" class="equi">X</label>
+                <img src="./images/carta-menu.webp" alt="">
+            </div>
+            <div class="ver2">
+                <label for="imagen2" class="equi2">X</label>
+                <img src="./images/carta-menu1.webp" alt="">
+            </div>
+        </section>
+
+        <section id="sec3" class="containerC">
+            <h2>NUESTRA CARTA</h2>
+
+            <div class="cartaLista">
+                <a href="#" style="background: orange; color: white; ">item</a>
+                <a href="#">item</a>
+                <a href="#">item</a>
+                <a href="#">item</a>
+                <a href="#">item</a>
+            </div>
+            <div class="precios">
+                <ul>
+                    <li>item <span>00.00$</span></li>
+                    <li>item <span>00.00$</span></li>
+                    <li><img src="./images/comida1.jpg" alt=""> item
+
+                        <span>00.00$</span>
+                    </li>
+                    <li>item <span>00.00$</span></li>
+                    <li>item <span>00.00$</span></li>
+                    <li>item <span>00.00$</span></li>
+                    <li><img src="./images/comida2.jpg" alt=""> item
+
+                        <span>00.00$</span>
+                    </li>
+                    <li>item <span>00.00$</span></li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section id="sec4" class="containerD">
+            <h2>RESERVA UNA MESA</h2>
+
+            <div class="reserva">
+                <div class="horarios">
+                    <h3>Horario aperttura</h3>
+                    <p>Martes-Jueves</p>
+                    <p>08:00 AM - 10:30 PM</p>
+                    <p>Viernes - Sabado</p>
+                    <p>08:00 AM - 11:00 PM</p>
+                    <p>Domingo</p>
+                    <p>09:00 AM - 06:00 PM</p>
+                    <h3>Informacion Adicional:</h3>
+                    <p><b>Telefono:</b>0000000</p>
+                    <p><b>Direccion:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quia.</p>
+                    <p><b>Informacion adicional:</b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit veniam est. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate alias, voluptate sapiente culpa, assumenda odio nemo atque exercitationem, laborum beatae dolor dolore. Recusandae, quas dignissimos.</p>
+                </div>
+    
+                <div class="form">
+                    <form action="">
+                        <label for="">Elegir tamaño de la mesa:</label>
+                        <input type="number">
+                        <label for="">Elige un dia:</label>
+                        <input type="date" name="" id="">
+                        <label for="">Elige una hora:</label>
+                        <input type="time" name="" id="">
+                        <button type="submit">REALIZAR PEDIDO</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
