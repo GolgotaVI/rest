@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -19,7 +20,7 @@ a {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #d2c8ad;
+  background-color: #3e3b32;
 }
 
 .so {
@@ -242,6 +243,11 @@ main .container .principal button:hover {
 main .imagen1 {
   display: none;
 }
+main section > h2 {
+  padding: 50px 0;
+  text-decoration: overline;
+  text-align: center;
+}
 main .containerB {
   max-width: 1440px;
   margin: auto;
@@ -250,10 +256,6 @@ main .containerB {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-main .containerB h2 {
-  padding: 50px 0;
-  text-decoration: overline;
 }
 main .containerB .cartas {
   width: 100%;
@@ -306,6 +308,97 @@ main .containerB #imagen1:checked ~ .ver .equi, main .containerB #imagen1:checke
   color: white;
   font-weight: bold;
 }
+main .containerC {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  background-color: #ffeacf;
+}
+main .containerC .cartaLista {
+  width: 90%;
+  text-align: center;
+}
+main .containerC .cartaLista a {
+  padding: 15px 30px;
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid orange;
+  border-radius: 10px;
+  color: orange;
+  margin: 0 10px;
+}
+main .containerC .cartaLista a:hover {
+  background-color: orangered;
+  color: white;
+}
+main .containerC .precios {
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  padding: 50px 0;
+}
+main .containerC .precios ul li {
+  padding: 15px 20px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+main .containerC .precios ul li img {
+  width: 100%;
+  height: 300px;
+}
+main .containerC .precios ul li span {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+}
+main .containerD .reserva {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+main .containerD .reserva .horarios {
+  margin: auto;
+  width: 90%;
+}
+main .containerD .reserva .horarios h3 {
+  margin: 15px 0;
+}
+main .containerD .reserva .horarios p {
+  width: 90%;
+}
+main .containerD .reserva .form {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+  padding: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0;
+}
+main .containerD .reserva .form form {
+  display: flex;
+  flex-direction: column;
+}
+main .containerD .reserva .form form label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+main .containerD .reserva .form form input {
+  padding: 10px 10px;
+  border: 1px solid gray;
+}
+main .containerD .reserva .form form button {
+  margin-top: 25px;
+  padding: 10px 0;
+  background-color: orange;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+main .containerD .reserva .form form button:hover {
+  background-color: orangered;
+  color: white;
+}
 
 @media (max-width: 1024px) {
   .container div h1, .container div h3, .container div button {
@@ -327,6 +420,8 @@ main .containerB #imagen1:checked ~ .ver .equi, main .containerB #imagen1:checke
   .container {
     flex-direction: column;
     width: 100%;
+    height: 70vh;
+    margin-bottom: 400px;
   }
   .container .principal {
     padding-bottom: 250px;
@@ -337,8 +432,7 @@ main .containerB #imagen1:checked ~ .ver .equi, main .containerB #imagen1:checke
   }
 
   .containerB {
-    position: relative;
-    top: 65%;
+    width: 100%;
   }
   .containerB h2 {
     font-size: 18px;
@@ -346,5 +440,35 @@ main .containerB #imagen1:checked ~ .ver .equi, main .containerB #imagen1:checke
   .containerB .cartas {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .containerC {
+    width: 100%;
+    position: relative;
+    top: 30%;
+  }
+  .containerC .cartaLista {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  .containerC a {
+    margin: 50px 0;
+  }
+
+  .containerD {
+    margin-top: 550px;
+  }
+  .containerD .reserva {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerD p {
+    font-size: 11px;
+  }
+  .containerD .horarios {
+    margin-bottom: 200px;
   }
 }
