@@ -1,0 +1,29 @@
+@mixin grid-colum($c){
+    display: grid;
+    grid-template-columns: $c;
+    align-items: center;
+}
+
+@mixin flex($space){
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+@mixin center{
+    margin: auto;
+    text-align: center;
+}
+
+@mixin background-att($at){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:$at;
+    background-position: center center;
+    object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+

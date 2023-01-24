@@ -1,173 +1,115 @@
-.so {
-  display: none;
-}
-
-.box {
+.check--hide {
   display: none;
 }
 
 .menu--hide {
-  transform: translateX(-300%);
-  transition: 0.5s;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: gray;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-.menu--hide ul li {
-  text-align: center;
-  margin: 20px 0;
-}
-.menu--hide ul li a {
-  color: white;
-}
-.menu--hide .cerrar-check {
-  position: absolute;
-  top: 0;
-  font-weight: bold;
-  color: white;
-}
-.menu--hide .nav__contactos--hide img {
-  padding: 20px;
+  display: none;
 }
 
-.nav {
+header {
   position: fixed;
   width: 100%;
   height: 100px;
-  display: grid;
-  grid-template-areas: "logo list contactos";
-  grid-template-columns: 150px auto auto;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.963);
-}
-.nav .show--menu {
-  display: none;
-}
-.nav span {
-  position: relative;
-  top: 5px;
-  left: 5px;
-  width: 50px;
-}
-.nav .list--hide {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0px 0px 5px 0px;
-  padding-top: 10px;
-}
-.nav .list--hide li {
-  margin: 15px 30px;
-}
-.nav .list--hide li a {
-  color: black;
-  font-size: 18px;
-}
-.nav .list--hide li a:hover {
-  text-decoration: underline;
-}
-.nav__logo {
-  grid-area: logo;
-  width: 100%;
-  padding-left: 50px;
-}
-.nav__logo img {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.nav__list {
-  grid-area: list;
-}
-.nav__list ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  gap: 3em;
-  font-size: 18px;
-}
-.nav__list ul li a:hover {
-  text-decoration: underline;
-}
-.nav__contactos {
-  grid-area: contactos;
-  padding-right: 100px;
-}
-.nav__contactos a {
-  margin: 0px 10px;
 }
 
-@media (max-width: 1024px) {
-  .nav .list--hide li a {
-    font-size: 12px;
-  }
-  .nav li a {
-    font-size: 12px;
-  }
-  .nav__logo {
-    width: 120px;
-  }
-  .nav__list {
-    padding-left: 140px;
-  }
-  .nav__contactos {
-    padding-right: 30px;
-  }
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
+
+.flex-eve {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav {
+  transform: translateX(100px);
+  width: 400px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.brand {
+  transform: translateX(-100px);
+  width: 170px;
+  justify-self: end;
+}
+
+.nav ul li a:hover {
+  color: #b93f3f;
+}
+
+.brand ul li img:hover {
+  background-color: #b93f3f;
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
-  .so {
-    position: fixed;
+  .menu--hide {
     display: block;
-    top: 30px;
+    margin-left: 50px;
   }
 
   .nav {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-1000px);
+    background-color: black;
+    width: 100vh;
+    height: 100vh;
+    transition: 0.5s;
   }
 
-  #check:checked ~ .menu--hide {
-    transform: translateX(0%);
-  }
-
-  .nav .list--hide li a {
-    font-size: 11px;
-  }
   .nav ul {
-    gap: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
   }
-  .nav li a {
-    font-size: 11px;
-  }
-  .nav__logo {
-    width: 130px;
-    margin-left: 280px;
-  }
-  .nav__list {
+
+  .brand {
     display: none;
   }
-}
-@media (max-width: 425px) {
-  .nav {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .nav__logo {
-    margin-left: 9%;
+
+  .close {
+    position: absolute;
+    top: 50px;
+    transform: translateX(-300px);
   }
 
-  #check:checked ~ .menu--hide {
-    transform: translateX(0%);
+  #check:checked ~ .nav {
+    transform: translateX(-100px);
+  }
+}
+@media (max-width: 736px) and (orientation: landscape) {
+  .nav {
+    width: 125%;
+  }
+  .nav ul {
+    gap: 2em;
+  }
+  .nav .close {
+    transform: translateX(-280px);
+    top: 30px;
+  }
+}
+@media (max-width: 475px) {
+  .nav {
+    width: 150%;
+  }
+  .nav ul {
+    gap: 3em;
+  }
+  .nav .close {
+    transform: translateX(-160px);
+    top: 10px;
   }
 }

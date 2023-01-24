@@ -1,0 +1,136 @@
+@use 'mixins';
+
+$button: #b93f3f;
+$hover: #5ec339;
+
+//-------------------PRINCIPAL--------------------
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+section{
+    height: 550px;
+}
+
+.fondo{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-image: url(../images/portada.jpg);
+    @include mixins.background-att(scroll);
+}
+
+.title{
+    @include mixins.flex(center);
+    width: 100%;
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.604);
+    gap: 2em;
+
+    h1{
+        font-size:50px ;
+        letter-spacing: 10px;
+    }
+
+    h2{
+        font-style: italic;
+        font-size: 28px;  
+        letter-spacing: 5px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 50px;
+        background-color: $button;
+        border-radius: 5%;
+    }
+
+    //-----------------HOVER----------------
+
+    a:hover{
+        background-color: $hover;
+        transition: 0.2s;
+    }
+}
+
+
+.page{
+    gap: 3em;
+    //display: flex;
+    img{
+        width: 100%;
+        height: 100%;
+        @include mixins.background-att(scroll);
+    }
+
+    .article{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+
+@media (max-width:768px){
+
+    .article{
+
+        i{
+            padding: 30px 0;
+        }
+
+        p{
+            width: 90%;
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+    }
+
+}
+
+
+@media (max-width:475px){
+
+    .fondo{
+        width: 100%;
+        height: 100vh;
+        margin-bottom: 100vh;
+    }
+
+    section{
+        height: 50vh;
+    }
+    
+    .page{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+
+        img{
+            width: 100%;
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .article{
+            text-align: center;
+            margin: auto;
+            h2{
+                padding-top: 30px;
+            }
+
+            p{
+                margin: auto;
+                padding-bottom: 50px;
+            }
+        }
+    }
+    
+}
+
