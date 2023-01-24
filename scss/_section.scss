@@ -87,7 +87,7 @@ section{
 
 .fondo1{
     width: 100%;
-    height: 700px;
+    height: 600px;
     margin: auto;
     background-image: url(../images/helado3.jpg);
     @include mixins.background-att(fixed);
@@ -110,6 +110,7 @@ section{
             width: 90%;
             letter-spacing: 1px;
             line-height: 30px;
+            //margin-bottom: 50px;
         }
     }
 
@@ -177,7 +178,7 @@ section{
     }
 
     .fondo1{
-        margin-top: 450px;
+        margin-top: 550px;
 
         .title{
             h1, h2, i{
