@@ -281,7 +281,7 @@ section {
   }
 }
 @media (max-width: 736px) and (orientation: landscape) {
-  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i {
+  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i, .fondo2 .title h1, .fondo2 .title h2, .fondo2 .title i {
     font-size: 35px;
     text-align: center;
   }
@@ -312,11 +312,14 @@ section {
     margin: auto;
     padding-bottom: 50px;
   }
-  .fondo1 {
+  .fondo1, .fondo2 {
     margin-top: 550px;
   }
-  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i {
+  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i, .fondo2 .title h1, .fondo2 .title h2, .fondo2 .title i {
     font-size: 35px;
     text-align: center;
+  }
+  .slider {
+    margin-top: 350px;
   }
 }/*# sourceMappingURL=style.css.map */

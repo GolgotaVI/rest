@@ -130,9 +130,9 @@ section{
 
     .article{
 
-        h2{
-            //padding-top: -50px;
-        }
+        // h2{
+        //     //padding-top: -50px;
+        // }
 
         i{
             padding: 30px 0;
@@ -150,7 +150,7 @@ section{
 
 @media (max-width: 736px) and (orientation: landscape){
 
-    .fondo1{
+    .fondo1, .fondo2{
         //margin-top: 450px;
 
         .title{
@@ -196,10 +196,10 @@ section{
             text-align: center;
             margin: auto;
 
-            h2{
-                //margin-top: -150px;
+            // h2{
+            //     //margin-top: -150px;
                 
-            }
+            // }
 
             p{
                 margin: auto;
@@ -209,7 +209,7 @@ section{
         }
     }
 
-    .fondo1{
+    .fondo1, .fondo2{
         margin-top: 550px;
 
         .title{
@@ -218,6 +218,10 @@ section{
                 text-align: center;
             }
         }
+    }
+
+    .slider{
+      margin-top: 350px;
     }
     
 }
