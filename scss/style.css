@@ -38,6 +38,7 @@ header {
   position: fixed;
   width: 100%;
   height: 100px;
+  background-color: rgba(25, 129, 93, 0.335);
 }
 
 .grid-2 {
@@ -147,7 +148,7 @@ section {
 
 .fondo {
   width: 100%;
-  height: 100vh;
+  height: 700px;
   margin: auto;
   background-image: url(../images/portada.jpg);
   background-repeat: no-repeat;
@@ -192,11 +193,13 @@ section {
 }
 
 .page {
+  width: 100%;
+  height: 500px;
   gap: 3em;
 }
 .page img {
   width: 100%;
-  height: 100%;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -206,12 +209,34 @@ section {
   background-size: cover;
 }
 .page .article {
+  width: 90%;
+  height: 500px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  align-items: center;
+  transform: translateY(32%);
+}
+
+.fondo1 {
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  background-image: url(../images/helado3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
 }
 
 @media (max-width: 768px) {
+  .article h2 {
+    margin-top: -100px;
+  }
   .article i {
     padding: 30px 0;
   }
@@ -225,7 +250,6 @@ section {
   .fondo {
     width: 100%;
     height: 100vh;
-    margin-bottom: 100vh;
   }
   section {
     height: 50vh;
@@ -233,7 +257,6 @@ section {
   .page {
     display: flex;
     flex-direction: column;
-    flex-direction: column-reverse;
   }
   .page img {
     width: 100%;
@@ -242,14 +265,21 @@ section {
     background-position: center;
   }
   .page .article {
+    width: 100%;
+    height: 100%;
+    background-color: white;
     text-align: center;
     margin: auto;
-  }
-  .page .article h2 {
-    padding-top: 30px;
   }
   .page .article p {
     margin: auto;
     padding-bottom: 50px;
+  }
+  .fondo1 {
+    margin-top: 450px;
+  }
+  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i {
+    font-size: 35px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
