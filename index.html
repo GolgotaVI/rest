@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantilla Helado</title>
     <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/slider.css">
 </head>
 <body>
     <header class="grid-2">
-        
-        
+
+
         <input type="checkbox" name="menu" id="check" class="check--hide">
             <label for="check" class="menu--hide">
                 <img src="./images/icons/menuLwhitel.svg"  class="icoM" alt="">
@@ -45,11 +46,11 @@
         <section class="page grid-2">
             <img src="./images/helado2.jpg" alt="">
             <div class="article">
-                
+
             <h2>NUESTROS SABORES</h2>
             <i>¡Frescos y sabrosos!</i>
             <p>
-                Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.  
+                Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.
             </p>
             <a href="#">MENU</a>
 
@@ -66,11 +67,11 @@
         <section class="page grid-2">
             <img src="./images/helado4.jpg" alt="">
             <div class="article">
-                
+
             <h2>NUESTROS Lugar</h2>
             <i>Helado frente al mar</i>
             <p>
-                Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.  
+                Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.
             </p>
             <a href="#">LEER MAS</a>
 
@@ -87,23 +88,69 @@
         </section>
 
 
-        
+
         <section class="page grid-2">
             <img src="./images/postre.jpg" alt="">
             <div class="article">
-                
+
             <h2>POSTRES</h2>
             <i>HELADOS Y MAS</i>
             <p>
-                Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.  
+                Párrafo. Haz clic aquí para agregar tu propio texto y editar. Es fácil. Haz clic en Editar Texto o doble clic aquí para agregar tu contenido y cambiar la fuente. En este espacio puedes contar tu historia y permitir a tus usuarios saber más sobre ti.
             </p>
             <a href="#">MENU</a>
 
             </div>
         </section>
-        <section class="slider">
-            <div><img src="./images/HELADOS.jpg" alt=""></div>
-        </section>
+
+            <div class="contenedor-padre">
+                <div class="contenedor-img">
+                    <img class="imgd" src="./images/helado1.jpg" alt="">
+                    <img class="imgd" src="./images/helado2.jpg" alt="">
+                    <img class="imgd" src="./images/helado3.jpg" alt="">
+                    <img class="imgd" src="./images/helado4.jpg" alt="">
+                </div>
+                <div class="contenedor-btn">
+                    <div class="contenedor-btn__next">&#62;</div>
+                    <div class="contenedor-btn__prev">&#60;</div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer">
+                    <div>
+                        <h2>DIRECCION</h2>
+                        <p>Av. Los Rosales 122 Madrid, CP 28021</p>
+                    </div>
+                    <div>
+                        <h2>CONTACTO</h2>
+                        <p>info@misitio.com Tel: 914-123-456</p>
+                    </div>
+                    <div>
+                        <h2>HORARIO</h2>
+                        <p>TODOS LOS DÍAS10AM-8PM</p>
+                    </div>
+                    <div>
+                        <h2>LISTA DE CORREOS</h2>
+                        <form action="">
+                            <input type="text" placeholder="Email">
+                            <button type="submit">Unirse</button>
+                        </form>
+                           
+                    </div>
+                </div>
+                <div class="footBrand">
+                    <ul class="flex-eve ">
+                        <li><a href="#"><img class="icoP" src="/images/icons/fb.svg" alt=""></a></li>
+                        <li><a href="#"><img class="icoP" src="/images/icons/gmailFwhite.svg" alt=""></a></li>
+                        <li><a href="#"><img class="icoP" src="/images/icons/insta.svg" alt=""></a></li>
+                    </ul>
+                <p>&#60;INSIDE{code}/&#62; &copy;2022 by GolgotaVI</p>
+            </div>
+             </footer>
     </main>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

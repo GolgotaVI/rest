@@ -75,7 +75,7 @@ header{
         position: absolute;
         left: 0;
         top: 0;
-        transform: translateX(-1000px);
+        transform: translateX(-2000px);
         background-color: black;
         width: 100vh;
         height: 100vh;
@@ -119,6 +119,10 @@ header{
 }
 
 @media (max-width: 736px) and (orientation: landscape){
+
+    header{
+        height: 60px;
+    }
     .nav{
         width: 125%;
 

@@ -86,7 +86,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    transform: translateX(-1000px);
+    transform: translateX(-2000px);
     background-color: black;
     width: 100vh;
     height: 100vh;
@@ -114,6 +114,9 @@ header {
   }
 }
 @media (max-width: 736px) and (orientation: landscape) {
+  header {
+    height: 60px;
+  }
   .nav {
     width: 125%;
   }
@@ -143,12 +146,12 @@ main {
 }
 
 section {
-  height: 550px;
+  height: 75vh;
 }
 
 .fondo {
   width: 100%;
-  height: 700px;
+  height: 100vh;
   margin: auto;
   background-image: url(../images/portada.jpg);
   background-repeat: no-repeat;
@@ -158,6 +161,8 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .title {
@@ -169,7 +174,7 @@ section {
   color: white;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.604);
-  gap: 2em;
+  gap: 2em 0;
 }
 .title h1 {
   font-size: 50px;
@@ -194,12 +199,11 @@ section {
 
 .page {
   width: 100%;
-  height: 500px;
-  gap: 3em;
+  height: 85vh;
 }
 .page img {
   width: 100%;
-  height: 500px;
+  height: 85vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -207,23 +211,41 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .page .article {
-  width: 95%;
-  height: 500px;
+  width: 100%;
+  height: 85vh;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  justify-content: center;
   align-items: center;
   padding-top: 10%;
+}
+.page .article h2 {
+  font-size: 32px;
+}
+.page .article i {
+  font-size: 20px;
+  padding: 30px 0;
 }
 .page .article a {
   text-decoration: none;
   color: white;
-  padding: 10px 50px;
+  padding: 20px 20%;
   background-color: #b93f3f;
   border-radius: 5%;
+  margin: 40px auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+.page .article p {
+  width: 70%;
+  line-height: 30px;
+  font-size: 22px;
+  text-align: center;
 }
 .page .article a:hover {
   background-color: #5ec339;
@@ -232,7 +254,7 @@ section {
 
 .fondo1 {
   width: 100%;
-  height: 600px;
+  height: 80vh;
   margin: auto;
   background-image: url(../images/helado3.jpg);
   background-repeat: no-repeat;
@@ -242,11 +264,14 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
+  position: relative;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .fondo2 {
   width: 100%;
-  height: 600px;
+  height: 80vh;
   margin: auto;
   background-image: url(../images/helado5.jpg);
   background-repeat: no-repeat;
@@ -256,34 +281,150 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
-.slider img {
+footer {
+  text-align: center;
+  margin: auto;
+  height: 30vh;
   width: 100%;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  background-position: center center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: cover;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+footer .footer input {
+  width: 80%;
+  padding: 10px 10px;
+  padding-left: 15px;
+  margin: 15px 0;
+}
+footer .footer button {
+  width: 80%;
+  padding: 10px 0;
+  cursor: pointer;
+  background: #b93f3f;
+  color: white;
+}
+footer .footer button:hover {
+  background-color: #5ec339;
+}
+footer .footBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .footBrand ul {
+  gap: 2em;
 }
 
 @media (max-width: 768px) {
-  .article i {
-    padding: 30px 0;
+  .fondo {
+    font-size: 15px;
   }
-  .article p {
+  .page {
+    height: 70vh;
+  }
+  .page img {
+    height: 70vh;
+  }
+  .page .article {
+    height: 70vh;
+    margin: auto;
+  }
+  .page .article h2, .page .article i, .page .article p, .page .article a {
+    font-size: 22px;
+  }
+  .page .article p {
+    font-size: 18px;
+  }
+  .page .article a {
+    font-size: 18px;
+  }
+  footer {
+    height: 40vh;
+    gap: 50px 0;
+  }
+  footer .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     width: 90%;
-    letter-spacing: 1px;
-    line-height: 30px;
+  }
+  footer .footer h2, footer .footer p {
+    font-size: 18px;
+  }
+  footer .footBrand {
+    gap: 1em;
   }
 }
-@media (max-width: 736px) and (orientation: landscape) {
-  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i, .fondo2 .title h1, .fondo2 .title h2, .fondo2 .title i {
-    font-size: 35px;
-    text-align: center;
+@media (max-width: 737px) and (orientation: landscape) {
+  .fondo {
+    height: 100vh;
+  }
+  .fondo .title h1 {
+    font-size: 25px;
+  }
+  .fondo .title h2 {
+    font-size: 19px;
+  }
+  .page {
+    width: 100%;
+    height: 90vh;
+  }
+  .page img {
+    height: 90vh;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .page .article {
+    height: 90vh;
+  }
+  .page .article h2, .page .article i {
+    font-size: 17px;
+    margin: 0;
+  }
+  .page .article i {
+    padding: 15px;
+  }
+  .page .article p {
+    line-height: 25px;
+    width: 90%;
+    font-size: 15px;
+  }
+  .page .article a {
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 10px 50px;
+  }
+  .fondo2 .title h2, .fondo1 .title h2 {
+    font-size: 25px;
+  }
+  .fondo2 .title h1, .fondo1 .title h1 {
+    font-size: 20px;
+  }
+  .fondo2 .title a, .fondo1 .title a {
+    font-size: 15px;
+  }
+  footer {
+    height: 100vh;
+    gap: 2em;
+  }
+  footer .footer h2, footer .footer p {
+    font-size: 15px;
   }
 }
 @media (max-width: 475px) {
@@ -291,35 +432,128 @@ section {
     width: 100%;
     height: 100vh;
   }
-  section {
-    height: 50vh;
+  .fondo h1 {
+    font-size: 30px;
+  }
+  .fondo h2 {
+    font-size: 20px;
+  }
+  .fondo a {
+    font-size: 13px;
   }
   .page {
     display: flex;
     flex-direction: column;
+    height: 130vh;
   }
   .page img {
     width: 100%;
-    height: 500px;
+    height: 65vh;
     background-size: cover;
     background-position: center;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .page .article {
+    height: 65vh;
     text-align: center;
     margin: auto;
+  }
+  .page .article h2 {
+    font-size: 18px;
+  }
+  .page .article i {
+    font-size: 19px;
   }
   .page .article p {
-    margin: auto;
-    padding-bottom: 50px;
+    line-height: 20px;
+    font-size: 17px;
   }
-  .fondo1, .fondo2 {
-    margin-top: 550px;
+  .page .article a {
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 10px 55px;
   }
-  .fondo1 .title h1, .fondo1 .title h2, .fondo1 .title i, .fondo2 .title h1, .fondo2 .title h2, .fondo2 .title i {
-    font-size: 35px;
+  .fondo1 h2, .fondo2 h2 {
+    font-size: 20px;
+  }
+  .fondo1 h1, .fondo2 h1 {
+    width: 90%;
     text-align: center;
+    font-size: 25px;
+  }
+  .fondo1 a, .fondo2 a {
+    font-size: 12px;
+    padding: 10px 55px;
   }
   .slider {
     margin-top: 350px;
   }
-}/*# sourceMappingURL=style.css.map */
+  footer {
+    height: 100vh;
+  }
+  footer .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  footer .footer h2, footer .footer p {
+    margin: 10px 0;
+  }
+}
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgba(206, 114, 114, 0.424);
+}
+.contenedor-padre {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.contenedor-img {
+    position: relative;
+    display: flex;
+    /* width: 400%; */
+/*}
+img {
+    display: block;
+    /* width: 25%; */
+/*}
+
+.contenedor-btn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor-btn__prev, .contenedor-btn__next {
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(219, 199, 199);
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contenedor-btn__prev{
+    left: 5px;
+}
+.contenedor-btn__next{
+    right: 5px;
+}
+
+*//*# sourceMappingURL=style.css.map */
